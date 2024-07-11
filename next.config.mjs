@@ -19,7 +19,7 @@ const nextConfig = {
     styledComponents: true,
   },
   swcMinify: true,
-  // output: "out",
+  output: "out",
   images: {
     unoptimized: true,
     remotePatterns: [

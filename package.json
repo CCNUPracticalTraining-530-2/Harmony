@@ -17,6 +17,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "static": "next build && next export",
     "prettier": "prettier --write .",
     "prepare": "husky install"
   },
