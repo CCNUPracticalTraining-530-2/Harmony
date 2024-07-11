@@ -1,9 +1,22 @@
 import { ChannelType, MemberRole } from '@prisma/client';
-import { Hash, Mic, ShieldCheck, UserCog, Video } from 'lucide-react';
+import {
+  Hash,
+  MessageCircleMore,
+  Mic,
+  ShieldCheck,
+  UserCog,
+  Video,
+} from 'lucide-react';
 import { redirect } from 'next/navigation';
 
 import { ScrollArea } from '@/common/components/ui/scroll-area';
 import { Separator } from '@/common/components/ui/separator';
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@/common/components/ui/tabs';
 import { currentProfile } from '@/common/libs/current-profile';
 import { db } from '@/common/libs/db';
 
@@ -127,66 +140,85 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
           />
         </div>
         <Separator className="my-2 rounded-md bg-zinc-200 dark:bg-zinc-700" />
-        {!!textChannels?.length && (
-          <div className="mb-2">
-            <ServerSection
-              sectionType="channels"
-              channelType={ChannelType.TEXT}
-              role={role}
-              label="文字频道"
-            />
-            <div className="space-y-[2px]">
-              {textChannels.map((channel) => (
-                <ServerChannel
-                  key={channel.id}
-                  channel={channel}
+        <Tabs defaultValue="text" className="w-full">
+          <TabsList className="grid w-full grid-cols-3">
+            <TabsTrigger value="text">
+              <MessageCircleMore className="mr-2 h-4 w-4" />
+            </TabsTrigger>
+            <TabsTrigger value="audio">
+              <Mic className="mr-2 h-4 w-4" />
+            </TabsTrigger>
+            <TabsTrigger value="video">
+              <Video className="mr-2 h-4 w-4" />
+            </TabsTrigger>
+          </TabsList>
+          <TabsContent value="text">
+            {!!textChannels?.length && (
+              <div className="mb-2">
+                <ServerSection
+                  sectionType="channels"
+                  channelType={ChannelType.TEXT}
                   role={role}
-                  server={server}
+                  label="文字频道"
                 />
-              ))}
-            </div>
-          </div>
-        )}
-        {!!audioChannels?.length && (
-          <div className="mb-2">
-            <ServerSection
-              sectionType="channels"
-              channelType={ChannelType.AUDIO}
-              role={role}
-              label="语音频道"
-            />
-            <div className="space-y-[2px]">
-              {audioChannels.map((channel) => (
-                <ServerChannel
-                  key={channel.id}
-                  channel={channel}
+                <div className="space-y-[2px]">
+                  {textChannels.map((channel) => (
+                    <ServerChannel
+                      key={channel.id}
+                      channel={channel}
+                      role={role}
+                      server={server}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </TabsContent>
+          <TabsContent value="audio">
+            {!!audioChannels?.length && (
+              <div className="mb-2">
+                <ServerSection
+                  sectionType="channels"
+                  channelType={ChannelType.AUDIO}
                   role={role}
-                  server={server}
+                  label="语音频道"
                 />
-              ))}
-            </div>
-          </div>
-        )}
-        {!!videoChannels?.length && (
-          <div className="mb-2">
-            <ServerSection
-              sectionType="channels"
-              channelType={ChannelType.VIDEO}
-              role={role}
-              label="视讯频道"
-            />
-            <div className="space-y-[2px]">
-              {videoChannels.map((channel) => (
-                <ServerChannel
-                  key={channel.id}
-                  channel={channel}
+                <div className="space-y-[2px]">
+                  {audioChannels.map((channel) => (
+                    <ServerChannel
+                      key={channel.id}
+                      channel={channel}
+                      role={role}
+                      server={server}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </TabsContent>
+          <TabsContent value="video">
+            {!!videoChannels?.length && (
+              <div className="mb-2">
+                <ServerSection
+                  sectionType="channels"
+                  channelType={ChannelType.VIDEO}
                   role={role}
-                  server={server}
+                  label="视讯频道"
                 />
-              ))}
-            </div>
-          </div>
-        )}
+                <div className="space-y-[2px]">
+                  {videoChannels.map((channel) => (
+                    <ServerChannel
+                      key={channel.id}
+                      channel={channel}
+                      role={role}
+                      server={server}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </TabsContent>
+        </Tabs>
         {!!members?.length && (
           <div className="mb-2">
             <ServerSection
