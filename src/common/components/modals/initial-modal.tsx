@@ -126,7 +126,6 @@ export const InitialModal = () => {
               />
             </div>
             <DialogFooter className="bg-gray-100 px-6 py-4">
-              {/* @ts-ignore */}
               <Button variant="primary" disabled={isLoading}>
                 创建服务器
               </Button>

@@ -60,7 +60,6 @@ export const LeaveServerModal = () => {
             <Button disabled={isLoading} onClick={onClose} variant="ghost">
               取消
             </Button>
-            {/* @ts-ignore */}
             <Button disabled={isLoading} variant="primary" onClick={onClick}>
               确定
             </Button>

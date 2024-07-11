@@ -221,7 +221,6 @@ export const ChatItem = ({
                     </FormItem>
                   )}
                 />
-                {/* @ts-ignore */}
                 <Button disabled={isLoading} size="sm" variant="primary">
                   保存
                 </Button>
