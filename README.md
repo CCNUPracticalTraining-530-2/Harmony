@@ -57,6 +57,7 @@
 ### 💻 本地调试
 
 记得先配置环境变量：
+
 ```env
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
@@ -76,6 +77,7 @@ NEXT_PUBLIC_LIVEKIT_URL=
 ```
 
 接着拉取代码和安装依赖：
+
 ```bash
 $ git clone https://github.com/CCNUPracticalTraining-530-2/Harmony.git
 $ cd Harmony
