@@ -52,14 +52,14 @@ export const DeleteChannelModal = () => {
       <DialogContent className="overflow-hidden bg-white p-0 text-black">
         <DialogHeader className="px-6 pt-8">
           <DialogTitle className="text-center text-2xl font-bold">
-            刪除頻道
+            删除频道
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            您確定要這樣做嗎? <br />
+            您确定要这样做吗？ <br />
             <span className="font-semibold text-indigo-500">
               #{channel?.name}
             </span>{' '}
-            將會被永久刪除。
+            将会被永久删除。
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="bg-gray-100 px-6 py-4">
@@ -69,7 +69,7 @@ export const DeleteChannelModal = () => {
             </Button>
             {/* @ts-ignore */}
             <Button disabled={isLoading} variant="primary" onClick={onClick}>
-              確定
+              确定
             </Button>
           </div>
         </DialogFooter>

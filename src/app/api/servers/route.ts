@@ -21,7 +21,7 @@ export async function POST(req: Request) {
         imageUrl,
         inviteCode: uuidv4(),
         channels: {
-          create: [{ name: '一般頻道', profileId: profile.id }],
+          create: [{ name: '一般频道', profileId: profile.id }],
         },
         members: {
           create: [{ profileId: profile.id, role: MemberRole.ADMIN }],

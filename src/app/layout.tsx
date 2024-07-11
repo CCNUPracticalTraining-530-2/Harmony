@@ -13,8 +13,8 @@ import '@/common/styles/globals.scss';
 const font = Open_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'MuxiBar - 一個在線即時通訊軟體',
-  description: '利用 Next.js v14 製作的時下最潮通訊軟體',
+  title: 'Harmony - 一个在线即时通讯软件',
+  description: '爱来自华中师范大学 2022 级计算机学院早安少女组',
 };
 
 export default function RootLayout({

@@ -14,13 +14,13 @@ export const ChatWelcome = ({ name, type }: ChatWelcomeProps) => {
         </div>
       )}
       <p className="text-xl md:text-3xl font-bold">
-        {type === "channel" ? "歡迎來到 #" : ""}
+        {type === "channel" ? "欢迎来到 #" : ""}
         {name}！
       </p>
       <p className="text-zinc-600 dark:text-zinc-400 text-sm">
         {type === "channel"
-          ? `這就是 #${name} 頻道的起點。`
-          : `這是您與 ${name} 私人訊息紀錄的開頭。`}
+          ? `这就是 #${name} 频道的起点。`
+          : `这就是您与 ${name} 私人信息记录的开头。`}
       </p>
     </div>
   );

@@ -45,14 +45,14 @@ export const DeleteServerModal = () => {
       <DialogContent className="overflow-hidden bg-white p-0 text-black">
         <DialogHeader className="px-6 pt-8">
           <DialogTitle className="text-center text-2xl font-bold">
-            刪除伺服器
+            删除服务器
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            你確定要刪除它？ <br />
+            您确定要删除它？ <br />
             <span className="font-semibold text-yellow-500">
               {server?.name}
             </span>{' '}
-            將被永久刪除。
+            将被永久删除。
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="bg-gray-100 px-6 py-4">
@@ -62,7 +62,7 @@ export const DeleteServerModal = () => {
             </Button>
             {/* @ts-ignore */}
             <Button disabled={isLoading} variant="primary" onClick={onClick}>
-              確定
+              确定
             </Button>
           </div>
         </DialogFooter>

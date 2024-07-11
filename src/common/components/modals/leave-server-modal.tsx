@@ -45,14 +45,14 @@ export const LeaveServerModal = () => {
       <DialogContent className="overflow-hidden bg-white p-0 text-black">
         <DialogHeader className="px-6 pt-8">
           <DialogTitle className="text-center text-2xl font-bold">
-            離開伺服器
+            离开服务器
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            您確定要離開{' '}
+            您确定要离开{' '}
             <span className="font-semibold text-yellow-500">
               {server?.name}
             </span>
-            ？
+            吗？
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="bg-gray-100 px-6 py-4">
@@ -62,7 +62,7 @@ export const LeaveServerModal = () => {
             </Button>
             {/* @ts-ignore */}
             <Button disabled={isLoading} variant="primary" onClick={onClick}>
-              確定
+              确定
             </Button>
           </div>
         </DialogFooter>

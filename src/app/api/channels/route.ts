@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     }
 
     if (name === '一般') {
-      return new NextResponse("Name cannot be '一般頻道'", { status: 400 });
+      return new NextResponse("Name cannot be '一般频道'", { status: 400 });
     }
 
     const server = await db.server.update({

@@ -57,12 +57,12 @@ export const InviteModal = () => {
       <DialogContent className="overflow-hidden bg-white p-0 text-black">
         <DialogHeader className="px-6 pt-8">
           <DialogTitle className="text-center text-2xl font-bold">
-            邀請好友
+            邀请好友
           </DialogTitle>
         </DialogHeader>
         <div className="p-6">
           <Label className="dark:text-secondary/70 text-xs font-bold uppercase text-zinc-500">
-            伺服器邀請鏈結
+            服务器邀请链接
           </Label>
           <div className="mt-2 flex items-center gap-x-2">
             <Input
@@ -85,7 +85,7 @@ export const InviteModal = () => {
             size="sm"
             className="mt-4 text-xs text-zinc-500"
           >
-            生成新鏈結
+            生成新链接
             <RefreshCw className="ml-2 h-4 w-4" />
           </Button>
         </div>

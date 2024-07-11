@@ -88,7 +88,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
           <ServerSearch
             data={[
               {
-                label: '文字頻道',
+                label: '文字频道',
                 type: 'channel',
                 data: textChannels?.map((channel) => ({
                   id: channel.id,
@@ -97,7 +97,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
                 })),
               },
               {
-                label: '語音頻道',
+                label: '语音频道',
                 type: 'channel',
                 data: audioChannels?.map((channel) => ({
                   id: channel.id,
@@ -106,7 +106,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
                 })),
               },
               {
-                label: '視訊頻道',
+                label: '视讯频道',
                 type: 'channel',
                 data: videoChannels?.map((channel) => ({
                   id: channel.id,
@@ -115,7 +115,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
                 })),
               },
               {
-                label: '伺服器成員',
+                label: '服务器成员',
                 type: 'member',
                 data: members?.map((member) => ({
                   id: member.id,
@@ -133,7 +133,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
               sectionType="channels"
               channelType={ChannelType.TEXT}
               role={role}
-              label="文字頻道"
+              label="文字频道"
             />
             <div className="space-y-[2px]">
               {textChannels.map((channel) => (
@@ -153,7 +153,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
               sectionType="channels"
               channelType={ChannelType.AUDIO}
               role={role}
-              label="語音頻道"
+              label="语音频道"
             />
             <div className="space-y-[2px]">
               {audioChannels.map((channel) => (
@@ -173,7 +173,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
               sectionType="channels"
               channelType={ChannelType.VIDEO}
               role={role}
-              label="視訊頻道"
+              label="视讯频道"
             />
             <div className="space-y-[2px]">
               {videoChannels.map((channel) => (
@@ -192,7 +192,7 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
             <ServerSection
               sectionType="members"
               role={role}
-              label="伺服器成員"
+              label="服务器成员"
               server={server}
             />
             <div className="space-y-[2px]">

@@ -72,7 +72,7 @@ export const ChatMessages = ({
       <div className="flex flex-1 flex-col items-center justify-center">
         <Loader2 className="my-4 h-7 w-7 animate-spin text-zinc-500" />
         <p className="text-xs text-zinc-500 dark:text-zinc-400">
-          訊息載入中...
+          信息载入中...
         </p>
       </div>
     );
@@ -83,7 +83,7 @@ export const ChatMessages = ({
       <div className="flex flex-1 flex-col items-center justify-center">
         <ServerCrash className="my-4 h-7 w-7 text-zinc-500" />
         <p className="text-xs text-zinc-500 dark:text-zinc-400">
-          發生了一些錯誤！
+          发生了一些错误！
         </p>
       </div>
     );
@@ -102,7 +102,7 @@ export const ChatMessages = ({
               onClick={() => fetchNextPage()}
               className="my-4 text-xs text-zinc-500 transition hover:text-zinc-600 dark:text-zinc-400 dark:hover:text-zinc-300"
             >
-              載入先前的消息
+              载入先前的信息
             </button>
           )}
         </div>

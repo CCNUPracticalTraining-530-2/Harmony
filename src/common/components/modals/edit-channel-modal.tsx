@@ -100,7 +100,7 @@ export const EditChannelModal = () => {
       <DialogContent className="overflow-hidden bg-white p-0 text-black">
         <DialogHeader className="px-6 pt-8">
           <DialogTitle className="text-center text-2xl font-bold">
-            編輯頻道
+            编辑频道
           </DialogTitle>
         </DialogHeader>
         <Form {...form}>
@@ -111,14 +111,14 @@ export const EditChannelModal = () => {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="dark:text-secondary/70 text-xs font-bold uppercase text-zinc-500">
-                      頻道名稱
+                    <FormLabel className="text-xs font-bold uppercase text-zinc-500 dark:text-secondary/70">
+                      频道名称
                     </FormLabel>
                     <FormControl>
                       <Input
                         disabled={isLoading}
                         className="border-0 bg-zinc-300/50 text-black focus-visible:ring-0 focus-visible:ring-offset-0"
-                        placeholder="輸入頻道名稱"
+                        placeholder="输入频道名称"
                         {...field}
                       />
                     </FormControl>
@@ -131,7 +131,7 @@ export const EditChannelModal = () => {
                 name="type"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>頻道類型</FormLabel>
+                    <FormLabel>频道类型</FormLabel>
                     <Select
                       disabled={isLoading}
                       onValueChange={field.onChange}
@@ -139,7 +139,7 @@ export const EditChannelModal = () => {
                     >
                       <FormControl>
                         <SelectTrigger className="border-0 bg-zinc-300/50 capitalize text-black outline-none ring-offset-0 focus:ring-0 focus:ring-offset-0">
-                          <SelectValue placeholder="選擇一個頻道類型" />
+                          <SelectValue placeholder="选择一个频道类型" />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>

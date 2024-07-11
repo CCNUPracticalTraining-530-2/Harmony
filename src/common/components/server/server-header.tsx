@@ -46,7 +46,7 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
             onClick={() => onOpen('invite', { server })}
             className="cursor-pointer px-3 py-2 text-sm text-indigo-600 dark:text-indigo-400"
           >
-            邀請其他人
+            邀请其他人
             <UserPlus className="ml-auto h-4 w-4" />
           </DropdownMenuItem>
         )}
@@ -55,7 +55,7 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
             onClick={() => onOpen('editServer', { server })}
             className="cursor-pointer px-3 py-2 text-sm"
           >
-            伺服器設定
+            服务器设定
             <Settings className="ml-auto h-4 w-4" />
           </DropdownMenuItem>
         )}
@@ -64,7 +64,7 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
             onClick={() => onOpen('members', { server })}
             className="cursor-pointer px-3 py-2 text-sm"
           >
-            管理成員
+            管理成员
             <Users className="ml-auto h-4 w-4" />
           </DropdownMenuItem>
         )}
@@ -73,7 +73,7 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
             onClick={() => onOpen('createChannel')}
             className="cursor-pointer px-3 py-2 text-sm"
           >
-            創建頻道
+            创建频道
             <PlusCircle className="ml-auto h-4 w-4" />
           </DropdownMenuItem>
         )}
@@ -83,7 +83,7 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
             onClick={() => onOpen('deleteServer', { server })}
             className="cursor-pointer px-3 py-2 text-sm text-rose-500"
           >
-            刪除伺服器
+            删除服务器
             <Trash className="ml-auto h-4 w-4" />
           </DropdownMenuItem>
         )}
@@ -92,7 +92,7 @@ export const ServerHeader = ({ server, role }: ServerHeaderProps) => {
             onClick={() => onOpen('leaveServer', { server })}
             className="cursor-pointer px-3 py-2 text-sm text-rose-500"
           >
-            離開伺服器
+            离开服务器
             <LogOut className="ml-auto h-4 w-4" />
           </DropdownMenuItem>
         )}

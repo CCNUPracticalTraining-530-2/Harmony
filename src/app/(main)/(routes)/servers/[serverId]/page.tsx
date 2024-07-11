@@ -29,7 +29,7 @@ const ServerIdPage = async ({ params }: ServerIdPageProps) => {
     include: {
       channels: {
         where: {
-          name: '一般頻道',
+          name: '一般频道',
         },
         orderBy: {
           createdAt: 'asc',
@@ -40,7 +40,7 @@ const ServerIdPage = async ({ params }: ServerIdPageProps) => {
 
   const initialChannel = server?.channels[0];
 
-  if (initialChannel?.name !== '一般頻道') {
+  if (initialChannel?.name !== '一般频道') {
     return null;
   }
 

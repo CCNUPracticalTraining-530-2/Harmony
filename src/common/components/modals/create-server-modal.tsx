@@ -29,10 +29,10 @@ import { useModal } from '@/common/hooks/use-modal-store';
 
 const formSchema = z.object({
   name: z.string().min(1, {
-    message: '伺服器名稱是必需的。',
+    message: '服务器名称是必须的。',
   }),
   imageUrl: z.string().min(1, {
-    message: '伺服器縮圖是必需的。',
+    message: '服务器缩图是必须的。',
   }),
 });
 
@@ -74,10 +74,10 @@ export const CreateServerModal = () => {
       <DialogContent className="overflow-hidden bg-white p-0 text-black">
         <DialogHeader className="px-6 pt-8">
           <DialogTitle className="text-center text-2xl font-bold">
-            自訂您的伺服器
+            自定您的服务器
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            透過名稱和圖像為您的伺服器賦予個性。您之後可以隨時更改它。
+            通过名称和图像为您的服务器赋予个性。您随时可以更改它。
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>
@@ -107,13 +107,13 @@ export const CreateServerModal = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="dark:text-secondary/70 text-xs font-bold uppercase text-zinc-500">
-                      伺服器名稱
+                      服务器名稱
                     </FormLabel>
                     <FormControl>
                       <Input
                         disabled={isLoading}
                         className="border-0 bg-zinc-300/50 text-black focus-visible:ring-0 focus-visible:ring-offset-0"
-                        placeholder="輸入伺服器名稱"
+                        placeholder="输入服务器名稱"
                         {...field}
                       />
                     </FormControl>
@@ -125,7 +125,7 @@ export const CreateServerModal = () => {
             <DialogFooter className="bg-gray-100 px-6 py-4">
               {/* @ts-ignore */}
               <Button variant="primary" disabled={isLoading}>
-                創建伺服器
+                创建服务器
               </Button>
             </DialogFooter>
           </form>

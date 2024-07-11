@@ -100,10 +100,10 @@ export const MembersModal = () => {
       <DialogContent className="overflow-hidden bg-white text-black">
         <DialogHeader className="px-6 pt-8">
           <DialogTitle className="text-center text-2xl font-bold">
-            成員管理
+            成员管理
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            {server?.members?.length} 位成員
+            {server?.members?.length} 位成员
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="mt-8 max-h-[420px] pr-6">
@@ -128,7 +128,7 @@ export const MembersModal = () => {
                         <DropdownMenuSub>
                           <DropdownMenuSubTrigger className="flex items-center">
                             <ShieldQuestion className="mr-2 h-4 w-4" />
-                            <span>權限</span>
+                            <span>权限</span>
                           </DropdownMenuSubTrigger>
                           <DropdownMenuPortal>
                             <DropdownMenuSubContent>
@@ -147,7 +147,7 @@ export const MembersModal = () => {
                                 }
                               >
                                 <ShieldCheck className="mr-2 h-4 w-4" />
-                                管理員
+                                管理员
                                 {member.role === 'MODERATOR' && (
                                   <Check className="ml-auto h-4 w-4" />
                                 )}
@@ -158,7 +158,7 @@ export const MembersModal = () => {
                         <DropdownMenuSeparator />
                         <DropdownMenuItem onClick={() => onKick(member.id)}>
                           <Gavel className="mr-2 h-4 w-4" />
-                          踢出伺服器
+                          踢出服务器
                         </DropdownMenuItem>
                       </DropdownMenuContent>
                     </DropdownMenu>

@@ -46,11 +46,11 @@ export const DeleteMessageModal = () => {
       <DialogContent className="overflow-hidden bg-white p-0 text-black">
         <DialogHeader className="px-6 pt-8">
           <DialogTitle className="text-center text-2xl font-bold">
-            刪除訊息
+            删除信息
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            你確定你要這麼做嗎？ <br />
-            該訊息將被永久刪除。
+            您确定您要这样做吗？ <br />
+            该信息将被永久删除。
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="bg-gray-100 px-6 py-4">
@@ -60,7 +60,7 @@ export const DeleteMessageModal = () => {
             </Button>
             {/* @ts-ignore */}
             <Button disabled={isLoading} variant="primary" onClick={onClick}>
-              確定
+              确定
             </Button>
           </div>
         </DialogFooter>

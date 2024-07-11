@@ -177,7 +177,7 @@ export const ChatItem = ({
                 rel="noopener noreferrer"
                 className="ml-2 text-sm text-indigo-500 hover:underline dark:text-indigo-400"
               >
-                PDF 檔案
+                PDF 文件
               </a>
             </div>
           )}
@@ -192,7 +192,7 @@ export const ChatItem = ({
               {content}
               {isUpdated && !deleted && (
                 <span className="mx-2 text-[10px] text-zinc-500 dark:text-zinc-400">
-                  (已編輯)
+                  (已编辑)
                 </span>
               )}
             </p>
@@ -213,7 +213,7 @@ export const ChatItem = ({
                           <Input
                             disabled={isLoading}
                             className="border-0 border-none bg-zinc-200/90 p-2 text-zinc-600 focus-visible:ring-0 focus-visible:ring-offset-0 dark:bg-zinc-700/75 dark:text-zinc-200"
-                            placeholder="編輯訊息"
+                            placeholder="编辑信息"
                             {...field}
                           />
                         </div>
@@ -227,7 +227,7 @@ export const ChatItem = ({
                 </Button>
               </form>
               <span className="mt-1 text-[10px] text-zinc-400">
-                點擊 Esc 鍵取消，點擊 Enter 鍵儲存
+                点击 Esc 键取消，点击 Enter 键储存
               </span>
             </Form>
           )}
@@ -236,14 +236,14 @@ export const ChatItem = ({
       {canDeleteMessage && (
         <div className="absolute -top-2 right-5 hidden items-center gap-x-2 rounded-sm border bg-white p-1 group-hover:flex dark:bg-zinc-800">
           {canEditMessage && (
-            <ActionTooltip label="編輯">
+            <ActionTooltip label="编辑">
               <Edit
                 onClick={() => setIsEditing(true)}
                 className="ml-auto h-4 w-4 cursor-pointer text-zinc-500 transition hover:text-zinc-600 dark:hover:text-zinc-300"
               />
             </ActionTooltip>
           )}
-          <ActionTooltip label="刪除">
+          <ActionTooltip label="删除">
             <Trash
               onClick={() =>
                 onOpen('deleteMessage', {

@@ -28,7 +28,7 @@ export const ChatVideoButton = () => {
   };
 
   const Icon = isVideo ? VideoOff : Video;
-  const tooltipLabel = isVideo ? 'End video call' : 'Start video call';
+  const tooltipLabel = isVideo ? '结束视频通话' : '开始视频通话';
 
   return (
     <ActionTooltip side="bottom" label={tooltipLabel}>

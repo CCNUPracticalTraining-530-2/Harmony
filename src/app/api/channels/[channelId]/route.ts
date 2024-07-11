@@ -43,7 +43,7 @@ export async function DELETE(
           delete: {
             id: params.channelId,
             name: {
-              not: '一般頻道',
+              not: '一般频道',
             },
           },
         },
@@ -80,8 +80,8 @@ export async function PATCH(
       return new NextResponse('Channel ID missing', { status: 400 });
     }
 
-    if (name === '一般頻道') {
-      return new NextResponse("Name cannot be '一般頻道'", { status: 400 });
+    if (name === '一般频道') {
+      return new NextResponse("Name cannot be '一般频道'", { status: 400 });
     }
 
     const server = await db.server.update({
@@ -102,7 +102,7 @@ export async function PATCH(
             where: {
               id: params.channelId,
               NOT: {
-                name: '一般頻道',
+                name: '一般频道',
               },
             },
             data: {

@@ -70,16 +70,16 @@ export const ServerSearch = ({ data }: ServerSearchProps) => {
       >
         <Search className="h-4 w-4 text-zinc-500 dark:text-zinc-400" />
         <p className="text-sm font-semibold text-zinc-500 transition group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300">
-          搜尋
+          搜寻
         </p>
         <kbd className="pointer-events-none ml-auto inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground">
           <span className="text-xs">⌘</span>K
         </kbd>
       </button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="搜尋所有頻道和成員" />
+        <CommandInput placeholder="搜搜寻所有频道和成员" />
         <CommandList>
-          <CommandEmpty>查無結果</CommandEmpty>
+          <CommandEmpty>查无结果</CommandEmpty>
           {data.map(({ label, type, data }) => {
             if (!data?.length) return null;
 

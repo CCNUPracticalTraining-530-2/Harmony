@@ -58,15 +58,15 @@ export const ServerChannel = ({
       >
         {channel.name}
       </p>
-      {channel.name !== '一般頻道' && role !== MemberRole.GUEST && (
+      {channel.name !== '一般频道' && role !== MemberRole.GUEST && (
         <div className="ml-auto flex items-center gap-x-2">
-          <ActionTooltip label="編輯">
+          <ActionTooltip label="编辑">
             <Edit
               onClick={(e) => onAction(e, 'editChannel')}
               className="hidden h-4 w-4 text-zinc-500 transition hover:text-zinc-600 group-hover:block dark:text-zinc-400 dark:hover:text-zinc-300"
             />
           </ActionTooltip>
-          <ActionTooltip label="刪除">
+          <ActionTooltip label="删除">
             <Trash
               onClick={(e) => onAction(e, 'deleteChannel')}
               className="hidden h-4 w-4 text-zinc-500 transition hover:text-zinc-600 group-hover:block dark:text-zinc-400 dark:hover:text-zinc-300"
@@ -74,7 +74,7 @@ export const ServerChannel = ({
           </ActionTooltip>
         </div>
       )}
-      {channel.name === '一般頻道' && (
+      {channel.name === '一般频道' && (
         <Lock className="ml-auto h-4 w-4 text-zinc-500 dark:text-zinc-400" />
       )}
     </button>
