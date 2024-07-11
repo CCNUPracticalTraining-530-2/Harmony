@@ -1,5 +1,13 @@
-import { SignIn } from '@clerk/nextjs';
+import { NextPage } from 'next';
 
-export default function Page() {
-  return <SignIn />;
-}
+import SignIn from '@/modules/SignIn';
+
+const Page: NextPage = () => {
+  return (
+    <>
+      <SignIn />
+    </>
+  );
+};
+
+export default Page;
