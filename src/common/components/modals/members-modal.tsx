@@ -8,9 +8,9 @@ import {
   Loader2,
   MoreVertical,
   Shield,
-  ShieldAlert,
   ShieldCheck,
   ShieldQuestion,
+  UserCog,
 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import qs from 'query-string';
@@ -42,7 +42,7 @@ import { ServerWithMembersWithProfiles } from '@/common/types/types';
 const roleIconMap = {
   GUEST: null,
   MODERATOR: <ShieldCheck className="ml-2 h-4 w-4 text-indigo-500" />,
-  ADMIN: <ShieldAlert className="h-4 w-4 text-rose-500" />,
+  ADMIN: <UserCog className="h-4 w-4 text-rose-500" />,
 };
 
 export const MembersModal = () => {

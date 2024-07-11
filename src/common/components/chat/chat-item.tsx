@@ -3,7 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Member, MemberRole, Profile } from '@prisma/client';
 import axios from 'axios';
-import { Edit, FileIcon, ShieldAlert, ShieldCheck, Trash } from 'lucide-react';
+import { Edit, FileIcon, ShieldCheck, Trash, UserCog } from 'lucide-react';
 import Image from 'next/image';
 import { useParams, useRouter } from 'next/navigation';
 import qs from 'query-string';
@@ -42,7 +42,7 @@ interface ChatItemProps {
 const roleIconMap = {
   GUEST: null,
   MODERATOR: <ShieldCheck className="ml-2 h-4 w-4 text-indigo-500" />,
-  ADMIN: <ShieldAlert className="ml-2 h-4 w-4 text-rose-500" />,
+  ADMIN: <UserCog className="ml-2 h-4 w-4 text-rose-500" />,
 };
 
 const formSchema = z.object({
@@ -158,7 +158,7 @@ export const ChatItem = ({
               href={fileUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-secondary relative mt-2 flex aspect-square h-48 w-48 items-center overflow-hidden rounded-md border"
+              className="relative mt-2 flex aspect-square h-48 w-48 items-center overflow-hidden rounded-md border bg-secondary"
             >
               <Image
                 src={fileUrl}
@@ -169,7 +169,7 @@ export const ChatItem = ({
             </a>
           )}
           {isPDF && (
-            <div className="bg-background/10 relative mt-2 flex items-center rounded-md p-2">
+            <div className="relative mt-2 flex items-center rounded-md bg-background/10 p-2">
               <FileIcon className="h-10 w-10 fill-indigo-200 stroke-indigo-400" />
               <a
                 href={fileUrl}

@@ -1,5 +1,5 @@
 import { ChannelType, MemberRole } from '@prisma/client';
-import { Hash, Mic, ShieldAlert, ShieldCheck, Video } from 'lucide-react';
+import { Hash, Mic, ShieldCheck, UserCog, Video } from 'lucide-react';
 import { redirect } from 'next/navigation';
 
 import { ScrollArea } from '@/common/components/ui/scroll-area';
@@ -28,7 +28,7 @@ const roleIconMap = {
   [MemberRole.MODERATOR]: (
     <ShieldCheck className="mr-2 h-4 w-4 text-indigo-500" />
   ),
-  [MemberRole.ADMIN]: <ShieldAlert className="mr-2 h-4 w-4 text-rose-500" />,
+  [MemberRole.ADMIN]: <UserCog className="mr-2 h-4 w-4 text-rose-500" />,
 };
 
 export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
