@@ -2,6 +2,16 @@
   "name": "harmony",
   "version": "0.1.0",
   "private": true,
+  "description": "Harmony - 在线即时通讯平台",
+  "author": "BlackishGreen33 <s5460703@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCNUPracticalTraining-530-2/Harmony.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CCNUPracticalTraining-530-2/Harmonyissues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
