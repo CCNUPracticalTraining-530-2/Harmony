@@ -8,6 +8,7 @@ import { currentProfile } from '@/common/libs/current-profile';
 import { db } from '@/common/libs/db';
 
 import { NavigationAction } from './navigation-action';
+import { NavigationBot } from './navigation-bot';
 import { NavigationItem } from './navigation-item';
 
 export const NavigationSidebar = async () => {
@@ -44,6 +45,7 @@ export const NavigationSidebar = async () => {
       </ScrollArea>
       <div className="mt-auto flex flex-col items-center gap-y-4 pb-3">
         <ModeToggle />
+        <NavigationBot />
         <UserButton
           afterSignOutUrl="/"
           appearance={{
