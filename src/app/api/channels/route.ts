@@ -20,7 +20,7 @@ export async function POST(req: Request) {
       return new NextResponse('Server ID missing', { status: 400 });
     }
 
-    if (name === '一般') {
+    if (name === '一般频道') {
       return new NextResponse("Name cannot be '一般频道'", { status: 400 });
     }
 
