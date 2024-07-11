@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="130" src="https://github.com/CCNUPracticalTraining-530-2/Harmony/blob/main/public/logo.png?raw=true" alt="Harmony Logo">
+  <img width="130" src="https://www.github.com/CCNUPracticalTraining-530-2.png" alt="Harmony Logo">
   <h1 align="center">Harmony</h1>
   <h3>在线即时通讯平台</h3>
   <a href="https://github.com/CCNUPracticalTraining-530-2/Harmony"><strong>探索项目文档 »</strong></a>
