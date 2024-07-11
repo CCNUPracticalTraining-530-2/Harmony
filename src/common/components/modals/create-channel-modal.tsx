@@ -39,10 +39,10 @@ const formSchema = z.object({
   name: z
     .string()
     .min(1, {
-      message: '頻道名稱為必填。',
+      message: '频道名称为必填。',
     })
     .refine((name) => name !== '一般', {
-      message: '頻道名稱不能為“一般”',
+      message: '频道名称不能为“一般”',
     }),
   type: z.nativeEnum(ChannelType),
 });
