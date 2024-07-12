@@ -55,7 +55,7 @@ const Conversations: React.FC<ConversationsProps> = async ({
     memberOne.profileId === profile.id ? memberTwo : memberOne;
 
   return (
-    <div className="flex h-full flex-col bg-white dark:bg-[#313338]">
+    <div className="flex h-full flex-col bg-[#f9eec6] dark:bg-[#313338]">
       <ChatHeader
         imageUrl={otherMember.profile.imageUrl}
         name={otherMember.profile.name}
