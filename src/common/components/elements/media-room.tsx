@@ -1,27 +1,30 @@
 'use client';
 
-import { useUser } from '@clerk/nextjs';
+// import { useUser } from '@clerk/nextjs';
 import { LiveKitRoom, VideoConference } from '@livekit/components-react';
 import '@livekit/components-styles';
 import { Loader2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 interface MediaRoomProps {
+  name: string;
   chatId: string;
   video: boolean;
   audio: boolean;
 }
 
-export const MediaRoom = ({ chatId, video, audio }: MediaRoomProps) => {
-  const { user } = useUser();
+export const MediaRoom = ({ name, chatId, video, audio }: MediaRoomProps) => {
+  // const { user } = useUser();
   const [token, setToken] = useState('');
 
+  console.log(name)
   useEffect(() => {
-    if (!user?.firstName || !user?.lastName) return;
+    console.log(name)
+    // if (!user?.firstName || !user?.lastName) return;
 
-    const name = `${user.firstName} ${user.lastName}`;
+    // const name = `${user.firstName} ${user.lastName}`;
 
-    (async () => {
+    const connectLivekit = async () => {
       try {
         const resp = await fetch(
           `/api/livekit?room=${chatId}&username=${name}`
@@ -31,8 +34,10 @@ export const MediaRoom = ({ chatId, video, audio }: MediaRoomProps) => {
       } catch (e) {
         console.log(e);
       }
-    })();
-  }, [user?.firstName, user?.lastName, chatId]);
+    };
+    connectLivekit();
+    // }, [user?.firstName, user?.lastName, chatId]);
+  }, [name, chatId]);
 
   if (token === '') {
     return (

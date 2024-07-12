@@ -12,7 +12,6 @@ import { db } from '@/common/libs/db';
 interface ConversationsProps {
   memberId: string;
   serverId: string;
-
   video?: boolean;
 }
 
@@ -64,7 +63,7 @@ const Conversations: React.FC<ConversationsProps> = async ({
         type="conversation"
       />
       {video && (
-        <MediaRoom chatId={conversation.id} video={true} audio={true} />
+        <MediaRoom name={currentMember.profile.name} chatId={conversation.id} video={true} audio={true} />
       )}
       {!video && (
         <>
