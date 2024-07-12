@@ -34,6 +34,16 @@ const Channels: React.FC<ChannelProps> = async ({ serverId, channelId }) => {
     },
   });
 
+  const currentMember = await db.member.findFirst({
+    where: {
+      serverId: serverId,
+      profileId: profile.id,
+    },
+    include: {
+      profile: true,
+    },
+  });
+
   if (!channel || !member) {
     redirect('/');
   }
@@ -73,10 +83,10 @@ const Channels: React.FC<ChannelProps> = async ({ serverId, channelId }) => {
         </>
       )}
       {channel.type === ChannelType.AUDIO && (
-        <MediaRoom chatId={channel.id} video={false} audio={true} />
+        <MediaRoom name={currentMember!.profile!.name} chatId={channel.id} video={false} audio={true} />
       )}
       {channel.type === ChannelType.VIDEO && (
-        <MediaRoom chatId={channel.id} video={true} audio={true} />
+        <MediaRoom name={currentMember!.profile!.name} chatId={channel.id} video={true} audio={true} />
       )}
     </div>
   );
