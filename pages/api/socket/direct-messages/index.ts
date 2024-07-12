@@ -1,8 +1,8 @@
 import { NextApiRequest } from 'next';
 
-import { currentProfilePages } from '@/lib/current-profile-pages';
-import { db } from '@/lib/db';
-import { NextApiResponseServerIo } from '@/types';
+import { currentProfilePages } from '@/common/libs/current-profile-pages';
+import { db } from '@/common/libs/db';
+import { NextApiResponseServerIo } from '@/common/types/types';
 
 export default async function handler(
   req: NextApiRequest,
