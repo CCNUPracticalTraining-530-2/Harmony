@@ -12,11 +12,25 @@ jobs:
     steps:
       - name: git checkout
         uses: actions/checkout@v4
+
       - name: pnpm setup
         uses: pnpm/action-setup@v3
         with:
           version: '9.5.0'
+
       - name: Install node modules
         run: pnpm install
+
       - name: Build Test
         run: pnpm run build
+
+      - name: Check for merge conflicts
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch --no-tags --prune origin +refs/heads/*:refs/remotes/origin/*
+          git checkout -qf ${{ github.event.pull_request.head.sha }}
+          git merge-base --is-ancestor origin/main ${{ github.event.pull_request.head.sha }} || git merge --no-commit --no-ff origin/main
+          if [ $? -ne 0 ]; then
+            echo "Merge conflicts detected. Please resolve them before merging."
+            exit 1
+          fi
