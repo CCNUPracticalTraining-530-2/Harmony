@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@capacitor/android':
         specifier: ^6.1.0
-        version: 6.1.0(@capacitor/core@6.1.0)
+        version: 6.1.0(@capacitor/core@6.1.1)
       '@capacitor/core':
-        specifier: ^6.1.0
-        version: 6.1.0
+        specifier: ^6.1.1
+        version: 6.1.1
       '@capacitor/ios':
         specifier: ^6.1.0
-        version: 6.1.0(@capacitor/core@6.1.0)
+        version: 6.1.0(@capacitor/core@6.1.1)
       '@clerk/nextjs':
         specifier: ^4.27.1
         version: 4.31.3(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.77.8))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -231,8 +231,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  '@capacitor/core@6.1.0':
-    resolution: {integrity: sha512-Kt4ONm0X9xxJXn9Q73oBaKdzep5B/VJw3VjXa2eGul4cD2k37mJwgjpXSMRnLH0Aju5bCiRL8J/hMAfTlokO6A==}
+  '@capacitor/core@6.1.1':
+    resolution: {integrity: sha512-b1s4WDMy3Y1/owTG2/XNGCI6G5SDpF2NT1JMAgcShue13fiAuHA+Ans7Wfei6McvR0KdopAE6tMHmDAfL5PM8Q==}
 
   '@capacitor/ios@6.1.0':
     resolution: {integrity: sha512-ex2q0LAyDDgfJj4fKDQuSNUYSpic3939/8A/sIIIxslwuRBF5i5fuhAngu6BhCt/pQSfEETcHtg2j2vD+YEZ2w==}
@@ -3754,9 +3754,9 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.0': {}
 
-  '@capacitor/android@6.1.0(@capacitor/core@6.1.0)':
+  '@capacitor/android@6.1.0(@capacitor/core@6.1.1)':
     dependencies:
-      '@capacitor/core': 6.1.0
+      '@capacitor/core': 6.1.1
 
   '@capacitor/cli@6.1.0':
     dependencies:
@@ -3781,13 +3781,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@capacitor/core@6.1.0':
+  '@capacitor/core@6.1.1':
     dependencies:
       tslib: 2.6.3
 
-  '@capacitor/ios@6.1.0(@capacitor/core@6.1.0)':
+  '@capacitor/ios@6.1.0(@capacitor/core@6.1.1)':
     dependencies:
-      '@capacitor/core': 6.1.0
+      '@capacitor/core': 6.1.1
 
   '@clerk/backend@0.38.12(react@18.3.1)':
     dependencies:
