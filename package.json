@@ -21,7 +21,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@capacitor/android": "^6.1.0",
+    "@capacitor/android": "^6.1.2",
     "@capacitor/core": "^6.1.1",
     "@capacitor/ios": "^6.1.0",
     "@clerk/nextjs": "^4.27.1",
