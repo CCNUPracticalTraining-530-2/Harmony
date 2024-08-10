@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@capacitor/android':
-        specifier: ^6.1.0
-        version: 6.1.0(@capacitor/core@6.1.1)
+        specifier: ^6.1.2
+        version: 6.1.2(@capacitor/core@6.1.1)
       '@capacitor/core':
         specifier: ^6.1.1
         version: 6.1.1
@@ -221,8 +221,8 @@ packages:
   '@bufbuild/protobuf@1.10.0':
     resolution: {integrity: sha512-QDdVFLoN93Zjg36NoQPZfsVH9tZew7wKDKyV5qRdj8ntT4wQCOradQjRaTdwMhWUYsgKsvCINKKm87FdEk96Ag==}
 
-  '@capacitor/android@6.1.0':
-    resolution: {integrity: sha512-S4PW4N5xtKHTrICjG7bkBhI70jdXbb+8nbm1pJpuXChCD0gkCcofJhPaw4bCoO0egcugBN1U7DkegNw5jWpHcw==}
+  '@capacitor/android@6.1.2':
+    resolution: {integrity: sha512-Yh0gQDY1bgRrL25J6ecIlvvs2kF8iNSwIPXjyw6Yz9mnwYxBazF5KZbjpKtGPnJgicJhFkYGsqOkEtxrve0EoQ==}
     peerDependencies:
       '@capacitor/core': ^6.1.0
 
@@ -3767,7 +3767,7 @@ snapshots:
 
   '@bufbuild/protobuf@1.10.0': {}
 
-  '@capacitor/android@6.1.0(@capacitor/core@6.1.1)':
+  '@capacitor/android@6.1.2(@capacitor/core@6.1.1)':
     dependencies:
       '@capacitor/core': 6.1.1
 
