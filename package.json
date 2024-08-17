@@ -71,7 +71,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^6.1.2",
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/uuid": "^10.0.0",
