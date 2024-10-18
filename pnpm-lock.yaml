@@ -54,8 +54,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-scroll-area':
-        specifier: ^1.1.0
-        version: 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.2.0
+        version: 1.2.0(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-select':
         specifier: ^2.1.1
         version: 2.1.1(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -660,6 +660,15 @@ packages:
       '@types/react':
         optional: true
 
+  '@radix-ui/react-context@1.1.1':
+    resolution: {integrity: sha512-UASk9zi+crv9WteK/NU4PLvOoL3OuE6BWVKNF6hPRBtYBDXQ2u5iu3O59zUlJiTVvkyuycnqrztsHVJwcK9K+Q==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
   '@radix-ui/react-dialog@1.0.5':
     resolution: {integrity: sha512-GjWJX/AUpB703eEBanuBnIWdIXg6NvJFCXcNlSZk4xdszCdhrJgBoUd1cGk67vFO+WdA2pfI/plOpqz/5GUP6Q==}
     peerDependencies:
@@ -900,6 +909,19 @@ packages:
       '@types/react-dom':
         optional: true
 
+  '@radix-ui/react-presence@1.1.1':
+    resolution: {integrity: sha512-IeFXVi4YS1K0wVZzXNrbaaUvIJ3qdY+/Ih4eHFhWA9SwGR9UDX7Ck8abvL57C4cv3wwMvUE0OG69Qc3NCcTe/A==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
   '@radix-ui/react-primitive@1.0.3':
     resolution: {integrity: sha512-yi58uVyoAcK/Nq1inRY56ZSjKypBNKTa/1mcL8qdl6oJeEaDbOldlzrGn7P6Q3Id5d+SYNGc5AJgc4vGhjs5+g==}
     peerDependencies:
@@ -939,8 +961,8 @@ packages:
       '@types/react-dom':
         optional: true
 
-  '@radix-ui/react-scroll-area@1.1.0':
-    resolution: {integrity: sha512-9ArIZ9HWhsrfqS765h+GZuLoxaRHD/j0ZWOWilsCvYTpYJp8XwCqNG7Dt9Nu/TItKOdgLGkOPCodQvDc+UMwYg==}
+  '@radix-ui/react-scroll-area@1.2.0':
+    resolution: {integrity: sha512-q2jMBdsJ9zB7QG6ngQNzNwlvxLQqONyL58QbEGwuyRZZb/ARQwk3uQVbCF7GvQVOtV6EU/pDxAw3zRzJZI3rpQ==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -4338,6 +4360,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.11
 
+  '@radix-ui/react-context@1.1.1(@types/react@18.3.11)(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+    optionalDependencies:
+      '@types/react': 18.3.11
+
   '@radix-ui/react-dialog@1.0.5(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.7
@@ -4599,6 +4627,16 @@ snapshots:
       '@types/react': 18.3.11
       '@types/react-dom': 18.3.0
 
+  '@radix-ui/react-presence@1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@radix-ui/react-compose-refs': 1.1.0(@types/react@18.3.11)(react@18.3.1)
+      '@radix-ui/react-use-layout-effect': 1.1.0(@types/react@18.3.11)(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 18.3.11
+      '@types/react-dom': 18.3.0
+
   '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.24.7
@@ -4635,14 +4673,14 @@ snapshots:
       '@types/react': 18.3.11
       '@types/react-dom': 18.3.0
 
-  '@radix-ui/react-scroll-area@1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@radix-ui/react-scroll-area@1.2.0(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@radix-ui/number': 1.1.0
       '@radix-ui/primitive': 1.1.0
       '@radix-ui/react-compose-refs': 1.1.0(@types/react@18.3.11)(react@18.3.1)
-      '@radix-ui/react-context': 1.1.0(@types/react@18.3.11)(react@18.3.1)
+      '@radix-ui/react-context': 1.1.1(@types/react@18.3.11)(react@18.3.1)
       '@radix-ui/react-direction': 1.1.0(@types/react@18.3.11)(react@18.3.1)
-      '@radix-ui/react-presence': 1.1.0(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-presence': 1.1.1(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-primitive': 2.0.0(@types/react-dom@18.3.0)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-use-callback-ref': 1.1.0(@types/react@18.3.11)(react@18.3.1)
       '@radix-ui/react-use-layout-effect': 1.1.0(@types/react@18.3.11)(react@18.3.1)
