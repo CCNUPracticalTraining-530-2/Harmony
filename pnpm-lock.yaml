@@ -155,7 +155,7 @@ importers:
         version: 6.1.2
       '@types/node':
         specifier: ^22
-        version: 22.6.1
+        version: 22.7.7
       '@types/react':
         specifier: ^18
         version: 18.3.11
@@ -1360,8 +1360,8 @@ packages:
   '@types/node@20.14.10':
     resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
 
-  '@types/node@22.6.1':
-    resolution: {integrity: sha512-V48tCfcKb/e6cVUigLAaJDAILdMP0fUW6BidkPK4GpGjXcfbnoHasCZDwz3N3yVt5we2RHm4XTQCpv0KJz9zqw==}
+  '@types/node@22.7.7':
+    resolution: {integrity: sha512-SRxCrrg9CL/y54aiMCG3edPKdprgMVGDXjA3gB8UmmBW5TcXzRUYAh8EWzTnSJFAd1rgImPELza+A3bJ+qxz8Q==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -1652,6 +1652,7 @@ packages:
 
   boolean@3.2.0:
     resolution: {integrity: sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   bplist-parser@0.3.2:
     resolution: {integrity: sha512-apC2+fspHGI3mMKj+dGevkGo/tCqVB8jMb6i+OX+E29p0Iposz07fABkRIfVUPNd5A5VbuOz1bZbnmkKLYF+wQ==}
@@ -5111,18 +5112,18 @@ snapshots:
   '@types/body-parser@1.19.5':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
 
   '@types/cacheable-request@6.0.3':
     dependencies:
       '@types/http-cache-semantics': 4.0.4
       '@types/keyv': 3.1.4
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
       '@types/responselike': 1.0.3
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
 
   '@types/cookie@0.4.1': {}
 
@@ -5131,15 +5132,15 @@ snapshots:
       '@types/connect': 3.4.38
       '@types/express': 4.17.14
       '@types/keygrip': 1.0.6
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
 
   '@types/cors@2.8.17':
     dependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
 
   '@types/express-serve-static-core@4.19.5':
     dependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
       '@types/qs': 6.9.15
       '@types/range-parser': 1.2.7
       '@types/send': 0.17.4
@@ -5153,7 +5154,7 @@ snapshots:
 
   '@types/fs-extra@8.1.5':
     dependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
 
   '@types/http-cache-semantics@4.0.4': {}
 
@@ -5167,13 +5168,13 @@ snapshots:
 
   '@types/keyv@3.1.4':
     dependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
 
   '@types/mime@1.3.5': {}
 
   '@types/node-fetch@2.6.2':
     dependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
       form-data: 3.0.1
 
   '@types/node@16.18.6': {}
@@ -5182,7 +5183,7 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@22.6.1':
+  '@types/node@22.7.7':
     dependencies:
       undici-types: 6.19.6
 
@@ -5203,19 +5204,19 @@ snapshots:
 
   '@types/responselike@1.0.3':
     dependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
 
   '@types/semver@7.5.8': {}
 
   '@types/send@0.17.4':
     dependencies:
       '@types/mime': 1.3.5
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
 
   '@types/serve-static@1.15.7':
     dependencies:
       '@types/http-errors': 2.0.4
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
       '@types/send': 0.17.4
 
   '@types/slice-ansi@4.0.0': {}
@@ -5224,7 +5225,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
     optional: true
 
   '@typescript-eslint/eslint-plugin@7.2.0(@typescript-eslint/parser@7.2.0(eslint@8.57.1)(typescript@5.6.2))(eslint@8.57.1)(typescript@5.6.2)':
@@ -5869,7 +5870,7 @@ snapshots:
     dependencies:
       '@types/cookie': 0.4.1
       '@types/cors': 2.8.17
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
       accepts: 1.3.8
       base64id: 2.0.0
       cookie: 0.4.2
@@ -7219,7 +7220,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 22.6.1
+      '@types/node': 22.7.7
       long: 5.2.3
 
   proxy-from-env@1.1.0: {}
