@@ -58,7 +58,7 @@
     "query-string": "^9.1.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.53.0",
+    "react-hook-form": "^7.53.1",
     "sass": "^1.80.4",
     "socket.io": "^4.8.0",
     "socket.io-client": "^4.8.0",
