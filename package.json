@@ -24,7 +24,7 @@
     "@capacitor/android": "^6.1.2",
     "@capacitor/core": "^6.1.2",
     "@capacitor/ios": "^6.1.2",
-    "@clerk/nextjs": "^4.27.1",
+    "@clerk/nextjs": "^6.2.0",
     "@emoji-mart/data": "^1.2.1",
     "@emoji-mart/react": "^1.1.1",
     "@hookform/resolvers": "^3.9.0",
