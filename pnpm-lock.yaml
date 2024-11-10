@@ -33,8 +33,8 @@ importers:
         specifier: ^1.5.3
         version: 1.5.3(livekit-client@1.15.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tslib@2.6.3)
       '@livekit/components-styles':
-        specifier: ^1.1.2
-        version: 1.1.2
+        specifier: ^1.1.4
+        version: 1.1.4
       '@prisma/client':
         specifier: ^5.22.0
         version: 5.22.0(prisma@5.21.1)
@@ -427,8 +427,8 @@ packages:
       react-dom: '>=18'
       tslib: ^2.6.2
 
-  '@livekit/components-styles@1.1.2':
-    resolution: {integrity: sha512-6ghL+JQWPnD3AYK+Zfcd100Kvh5YrrG2z23REyXUjtHpQjPRgg7F/lmHNa7Jz55afCv0L0BQFYpfo5Z4Kdc+tw==}
+  '@livekit/components-styles@1.1.4':
+    resolution: {integrity: sha512-QCupn7tQ/dy/WZclrfsgtDe8peiGYS6Ied1IGkKOysaXo04l90t62SIUTKyxgd0dNDhUDC0p34qCggGZs/44lQ==}
     engines: {node: '>=18'}
 
   '@next/env@14.2.15':
@@ -4084,7 +4084,7 @@ snapshots:
       tslib: 2.6.3
       usehooks-ts: 2.9.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
-  '@livekit/components-styles@1.1.2': {}
+  '@livekit/components-styles@1.1.4': {}
 
   '@next/env@14.2.15': {}
 
