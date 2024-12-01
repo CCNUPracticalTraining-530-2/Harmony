@@ -78,8 +78,8 @@ importers:
         specifier: ^6.7.2
         version: 6.7.2(next@14.2.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(react@18.3.1)(uploadthing@6.13.2(next@14.2.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.81.0))(tailwindcss@3.4.15))
       axios:
-        specifier: ^1.7.7
-        version: 1.7.7
+        specifier: ^1.7.8
+        version: 1.7.8
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -1405,8 +1405,8 @@ packages:
     resolution: {integrity: sha512-qPC9o+kD8Tir0lzNGLeghbOrWMr3ZJpaRlCIb6Uobt/7N4FiEDvqUMnxzCHRHmg8vOg14kr5gVNyScRmbMaJ9g==}
     engines: {node: '>=4'}
 
-  axios@1.7.7:
-    resolution: {integrity: sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==}
+  axios@1.7.8:
+    resolution: {integrity: sha512-Uu0wb7KNqK2t5K+YQyVCLM76prD5sRFjKHbJYCP1J7JFGEQ6nN7HWn9+04LAeiJ3ji54lgS/gZCH1oxyrf1SPw==}
 
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
@@ -5007,7 +5007,7 @@ snapshots:
 
   axe-core@4.10.1: {}
 
-  axios@1.7.7:
+  axios@1.7.8:
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
@@ -6247,7 +6247,7 @@ snapshots:
 
   livekit-server-sdk@1.2.7:
     dependencies:
-      axios: 1.7.7
+      axios: 1.7.8
       camelcase-keys: 7.0.2
       jsonwebtoken: 9.0.2
       long: 5.2.3
