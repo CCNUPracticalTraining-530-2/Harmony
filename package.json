@@ -76,7 +76,7 @@
     "@types/react-dom": "^18",
     "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.20",
-    "electron": "^33.2.0",
+    "electron": "^34.0.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.3",
     "eslint-config-prettier": "^9.1.0",
